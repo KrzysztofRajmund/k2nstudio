@@ -38,14 +38,14 @@ const GetLoose = ({ getProductDetails, selectedProduct, match, getItems,
 
   const getProduct = (
     <>
-      <Container className="productTitle col-12">
-        <Col className="col-xs-12 col-md-4">
+      <Row className="productTitle col-12">
+        <Col className="col-12">
         <hr/> 
       <div  className="subtitleLargest">    
       Get loose with your project...
       </div> 
       </Col>
-      <Col className="col-xs-12 col-md-4 col-xl-3">
+      <Col className="col-12">
           <Navbar>
             <Nav>  
       
@@ -66,7 +66,7 @@ const GetLoose = ({ getProductDetails, selectedProduct, match, getItems,
             </Nav>
           </Navbar>
           </Col>
-      </Container>
+      </Row>
     </>
   );
 

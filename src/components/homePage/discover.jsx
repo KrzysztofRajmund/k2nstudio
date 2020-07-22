@@ -61,8 +61,11 @@ const Discover = ({
     const packshot = (
       <>
         <Table responsive>
+        <tr>
+            <th> PACKSHOT:</th>
+          </tr>
           <tr>
-            <th> Plan BASIC</th>
+            <th> Basic</th>
           </tr>
           <tbody className="transparentBtn">
             <tr>
@@ -81,7 +84,7 @@ const Discover = ({
         <Table responsive>
           <tbody className="transparentBtn">
             <tr>
-              <th>Plan PREMIUM</th>
+              <th>Premium</th>
             </tr>
             <tr>
               <td>
@@ -102,11 +105,14 @@ const Discover = ({
     );
     return (
       <Row className="col-12 hideSetionMediaOne">
-        <Col className="col-12">
+        <Col className="col-12 text-center mt-5">
           <hr />
+          <div className="subtitleLargest mb-5"> 
+Prices
+        </div>
           <div className="mb-3">
             <Button
-              className="transparentBtn ml-0"
+              className="transparentBtn col-sm-6 col-md-3"
               onClick={onClickToggleBestsellers}
             >
               <img
@@ -119,7 +125,7 @@ const Discover = ({
               Packshot
             </Button>
             <Button
-              className="transparentBtn"
+              className="transparentBtn col-sm-6 col-md-3"
               bordless
               onClick={onClickTogglePremiere}
             >
@@ -132,7 +138,8 @@ const Discover = ({
               ></img>
               Model portfolio
             </Button>
-            <Button className="transparentBtn" onClick={onClickToggleNewcoming}>
+            <Button className="transparentBtn col-sm-6 col-md-5"
+            onClick={onClickToggleNewcoming}>
               <img
                 id="promoCode"
                 src={promoCode}
@@ -239,11 +246,14 @@ const Discover = ({
     );
     return (
       <Row className="col-12 hideSetionMediaOne">
-        <Col className="col-12">
+             <Col className="col-12 text-center mt-5">
           <hr />
+          <div className="subtitleLargest mb-5"> 
+Prices
+        </div>
           <div className="mb-3">
-            <Button
-              className="transparentBtn ml-0"
+          <Button
+              className="transparentBtn col-sm-6 col-md-3"
               onClick={onClickToggleBestsellers}
             >
               <img
@@ -256,7 +266,7 @@ const Discover = ({
               Packshot
             </Button>
             <Button
-              className="transparentBtn"
+              className="transparentBtn col-sm-6 col-md-3"
               bordless
               onClick={onClickTogglePremiere}
             >
@@ -269,7 +279,8 @@ const Discover = ({
               ></img>
               Model portfolio
             </Button>
-            <Button className="transparentBtn" onClick={onClickToggleNewcoming}>
+            <Button className="transparentBtn col-sm-6 col-md-5"
+            onClick={onClickToggleNewcoming}>
               <img
                 id="promoCode"
                 src={promoCode}
@@ -313,11 +324,14 @@ const Discover = ({
     );
     return (
       <Row className="col-12 hideSetionMediaOne">
-        <Col className="col-12">
+           <Col className="col-12 text-center mt-5">
           <hr />
+          <div className="subtitleLargest mb-5"> 
+Prices
+        </div>
           <div className="mb-3">
-            <Button
-              className="transparentBtn ml-0"
+          <Button
+              className="transparentBtn col-sm-6 col-md-3"
               onClick={onClickToggleBestsellers}
             >
               <img
@@ -330,7 +344,7 @@ const Discover = ({
               Packshot
             </Button>
             <Button
-              className="transparentBtn"
+              className="transparentBtn col-sm-6 col-md-3"
               bordless
               onClick={onClickTogglePremiere}
             >
@@ -343,7 +357,8 @@ const Discover = ({
               ></img>
               Model portfolio
             </Button>
-            <Button className="transparentBtn" onClick={onClickToggleNewcoming}>
+            <Button className="transparentBtn col-sm-6 col-md-5"
+            onClick={onClickToggleNewcoming}>
               <img
                 id="promoCode"
                 src={promoCode}
