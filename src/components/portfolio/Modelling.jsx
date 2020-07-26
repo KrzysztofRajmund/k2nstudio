@@ -49,19 +49,19 @@ const Modelling = ({
 
   return (
     <>
-      <Container className="productTitle col-12">
-        <Col className="col-xs-12 col-md-4">
+        <Row className="productTitle col-11 p-0">
+        <Col>
           <hr />
           <div className="subtitleLargest">Modelling</div>
         </Col>
-        <Col className="col-xs-12 col-md-4 col-xl-3">
+        <Col className="col-12 col-md-4 col-xl-3">
           <Navbar>
             <Nav>
               <Nav.Link className="footerLink" href="#features">
                 <small>Features</small>
               </Nav.Link>
             </Nav>
-            <Nav className="mr-5">
+            <Nav>
               <Nav.Link href="https://www.facebook.com/k2nstudio/">
                 {" "}
                 <img src={facebook} alt="img" height="30px" width="30px"></img>
@@ -72,7 +72,7 @@ const Modelling = ({
             </Nav>
           </Navbar>
         </Col>
-      </Container>
+      </Row>
       <Container className="portfolioCard col-12">
   {getImages}
       </Container>

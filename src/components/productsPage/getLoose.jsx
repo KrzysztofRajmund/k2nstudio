@@ -35,7 +35,7 @@ const GetLoose = ({ getProductDetails, selectedProduct, match, getItems,
 
   const getProduct = (
     <>
-      <Row className="productTitle col-12">
+      <Row className="productTitle col-11 p-0">
         <Col className="col-12">
         <hr/> 
       <div  className="subtitleLargest">    
