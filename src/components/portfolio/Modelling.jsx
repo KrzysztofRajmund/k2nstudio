@@ -43,7 +43,7 @@ const Modelling = ({
   const getImages = fetchReducer.map((item) => (
     <Card key={item.id} className="col-md-6">
       <Card.Img variant="top" src={item.url} />
-  <button>{item.id}</button>
+  {/* <button>{item.id}</button> */}
     </Card>
   ));
 
