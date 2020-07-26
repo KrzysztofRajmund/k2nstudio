@@ -21,9 +21,6 @@ import { getProductDetails,getItems } from "../../actions/fetchActions";
 //components
 import ThumbnailCarousel from "./thumbnailCarousel";
 //assets
-import facebook from "../../assets/facebook.png";
-import twitter from "../../assets/twitter.png";
-import heart from "../../assets/heart.png";
 import creditCards from "../../assets/creditCards.png";
 
 const GetLoose = ({ getProductDetails, selectedProduct, match, getItems,

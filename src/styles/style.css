@@ -24,12 +24,34 @@ h3.slideSale {
   margin-bottom: 8%;
 }
 
+.card {
+  padding: 0px;
+  margin-top: 5px;
+  background-color: #F8F8F8 !important;
+}
+
 .card-body {
-  background-color: rgba(40, 9, 63, 0.25);
+  margin-bottom: 5px;
 }
 
 .card-title {
+  margin-top: 15px;
+  margin-bottom: 15px;
+  color: #628c9a !important;
+  text-transform: uppercase;
+}
+
+.card-subtitle {
+  text-transform: uppercase;
+}
+
+.card-text {
   color: #2B2B28;
+}
+
+div .profileCard {
+  border: none;
+  border-radius: 0px;
 }
 
 .jumbotronSale {

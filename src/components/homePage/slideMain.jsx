@@ -7,11 +7,6 @@ import {connect} from 'react-redux';
 import {getItems} from '../../actions/fetchActions';
 //router
 import { Link } from 'react-router-dom';
-//assets
-import infoIcon from "../../assets/infoIcon.png";
-
-
-
 
 
 const SlideMain = ({getItems,fetchReducer}) => {
@@ -28,7 +23,6 @@ const SlideMain = ({getItems,fetchReducer}) => {
 
     const suggestedItems = fetchReducer.slice(0, 2).map((item) => (
       <Carousel.Item key={item.id}>
-        <Link to={"/" + item.id}>
           <img
             className="d-block w-100"
             src={item.gif}
@@ -36,18 +30,8 @@ const SlideMain = ({getItems,fetchReducer}) => {
             height="auto"
             width="100%"
           />
-        </Link>
         <Carousel.Caption>
         <h3 className="slideSale">{item.title}</h3>
-          <Link to={"/" + item.id}>
-          <img
-            className="infoIconSlide"
-            src={infoIcon}
-            alt="img"
-            height="40px"
-            width="40px"
-          ></img>
-          </Link>
         </Carousel.Caption>
       </Carousel.Item>
       
@@ -55,8 +39,8 @@ const SlideMain = ({getItems,fetchReducer}) => {
     return (
       <>
         <Carousel activeIndex={index} 
-        // indicators={false}
-        // controls={false}
+        indicators={false}
+        controls={false}
         // interval={null}
         slide={true}
         onSelect={handleSelect}

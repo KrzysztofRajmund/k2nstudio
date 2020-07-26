@@ -10,8 +10,7 @@ import {
 } from "react-bootstrap";
 //assets
 import facebook from ".././assets/facebook.png";
-import twitter from ".././assets/twitter.png";
-import promoCode from ".././assets/promoCode.png";
+import instagram from ".././assets/instagram.png";
 import creditCards from ".././assets/creditCards.png";
 import logo from ".././assets/logo.png"
 
@@ -25,24 +24,16 @@ const Footer = () => {
         footerTopElementOne
          ml-5 mr-auto"
         >
-          <img
-            id="promoCode"
-            src={promoCode}
-            alt="img"
-            height="30px"
-            width="30px"
-          ></img>
           <Nav.Link className="footerLink" href="#home" id="couponTitle">
             <img src={creditCards} alt="img" height="30px" width="auto"></img>
           </Nav.Link>
         </Nav>
         <Nav className="mr-5">
-          <Nav.Link href="#home">
-            {" "}
+          <Nav.Link href="https://www.facebook.com/k2nstudio/">
             <img src={facebook} alt="img" height="30px" width="30px"></img>
           </Nav.Link>
-          <Nav.Link href="#features">
-            <img src={twitter} alt="img" height="30px" width="30px"></img>
+          <Nav.Link href="https://www.instagram.com/k2nstudio/">
+            <img src={instagram} alt="img" height="30px" width="30px"></img>
           </Nav.Link>
         </Nav>
       </Navbar>

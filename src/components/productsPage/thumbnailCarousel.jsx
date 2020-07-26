@@ -1,14 +1,14 @@
 import React, {useState, useEffect} from 'react';
 //react-bootstrap
-import {Container,Carousel,Card,CardGroup, Modal, Row} from 'react-bootstrap'
+import {Container,Carousel,Card,CardGroup,Row} from 'react-bootstrap'
 //redux
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import {getItems, getProductDetails} from '../../actions/fetchActions';
 //router
 import { Link } from 'react-router-dom';
-//assets
-import infoIcon from "../../assets/infoIcon.png";
+
+
 
 
 
@@ -20,19 +20,6 @@ const ThumbnailCarousel = ({getItems,getProductDetails, fetchReducer,selectedPro
         getItems();
     },[])
 
-
-    //modal button
-
-    const [show, setShow] = useState(false);
-
-    const handleClose = () => setShow(false);
-
-    const handleShow = (id) => {
-          setShow(true)
-          getProductDetails(id);
-          console.log("id modal",id)
-        
-    };
     // carousel useState
     const [index, setIndex] = useState(0);
     const [direction, setDirection] = useState(null);
@@ -42,7 +29,7 @@ const ThumbnailCarousel = ({getItems,getProductDetails, fetchReducer,selectedPro
     };
    
     const productImages = fetchReducer.slice(3,7).map(item=>(
-      <Card key={item.id} className="thumbnailCarouselRow" onClick={()=>handleShow(item.id)}>
+      <Card key={item.id} className="thumbnailCarouselRow">
       
         <Card.Img variant="top"src={item.verticalCardUrl} height="100%"/>
         
@@ -51,8 +38,7 @@ const ThumbnailCarousel = ({getItems,getProductDetails, fetchReducer,selectedPro
     const productImagesTwo = fetchReducer.slice(8,12).map(item=>(
       <Card key={item.id} 
       className="thumbnailCarouselRow" 
-      onClick={()=>handleShow(item.id)}>
-      
+  >    
         <Card.Img variant="top"src={item.verticalCardUrl}/>
         
       </Card>
@@ -60,28 +46,6 @@ const ThumbnailCarousel = ({getItems,getProductDetails, fetchReducer,selectedPro
    
     return (
       <>
-      {/* modal */}
-      <Modal show={show} 
-        onHide={handleClose}
-        // size="xl"
-        className="modalProductDetails"
-        backdropClassName="backdropModalProductPage"
-        >     
-              <Card.Img 
-             className="d-block w-100"
-             src={selectedProduct.verticalCardUrl}
-             height="auto"
-             />
-            <Link  className="modalInfoIcon" onClick={handleClose} to={"/" + selectedProduct.id}>
-        <img
-            src={infoIcon}
-            alt="infoicon img"
-            height="30px"
-            width="30px"
-          />
-          </Link>
-           
-          </Modal>
           {/* carousel */}
           <Container className="col-12" >
         <Carousel 

@@ -8,6 +8,8 @@ body {
     color: #F8F8F8!important; 
   }
 
+
+
   .basicDescriptionText{
     @include mainText($primaryTextDarkGrey,0,$largeFontSize);
     letter-spacing: 0.4px;
@@ -27,12 +29,33 @@ body {
     margin-bottom: 8%;
 }
 
+.card{
+    padding: 0px;
+    margin-top: 5px;
+    background-color:$primaryTextWhite !important; 
+}
+
   .card-body{
-    background-color:$cardBackgroundColor;
-    
+    margin-bottom: 5px;
   }
   .card-title {
-    color: $primaryTextDarkGrey;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    color: $navBackgroundColor;
+    text-transform: uppercase;
+  }
+
+  .card-subtitle{
+    text-transform: uppercase;
+  }
+
+  .card-text{
+      color:$primaryTextDarkGrey;
+  }
+
+ div .profileCard{
+      border:none;
+      border-radius: 0px;
   }
   
   //JUMBOTRON SALE

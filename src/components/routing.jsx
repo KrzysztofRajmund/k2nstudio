@@ -16,10 +16,12 @@ import {
 import NavMain from './navbar/navMain';
 import Footer from './footer';
 import MainPage from './homePage/mainPage';
-import ProductDetails from './productsPage/productDetails';
 import Commercial from './portfolio/Commercial';
 import Portrait from './portfolio/Portrait';
 import Modelling from './portfolio/Modelling';
+import Price from './companyDetails/Price';
+import About from './companyDetails/About';
+import Contact from './companyDetails/Contact';
 
 const Routing = (props) => {
   return (
@@ -30,7 +32,9 @@ const Routing = (props) => {
           <Route path="/commercial" component={Commercial}/>
           <Route path="/portrait" component={Portrait}/>
           <Route path="/modelling" component={Modelling}/>
-          <Route path="/:id" component={ProductDetails} />
+          <Route path="/price" component={Price}/>
+          <Route path="/about" component={About}/>
+          <Route path="/contact" component={Contact}/>
           <Route path="/" component={MainPage} />
         </Switch>
         <Route path="/" component={Footer} />

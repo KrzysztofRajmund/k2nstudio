@@ -16,7 +16,6 @@ import {
 } from "react-bootstrap";
 //assets
 import xButton from "../../assets/xButton.png";
-import infoIcon from "../../assets/infoIcon.png";
 import home from "../../assets/home.png";
 import logo from "../../assets/logo.png";
 //router
@@ -42,10 +41,10 @@ const NavMain = ({
         </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="mr-auto ml-3">
+          <Nav className="mr-auto">
             <Nav.Link><Link to={"/about"}>About </Link></Nav.Link>
             <Nav.Link><Link to={"/contact"}>Contact</Link></Nav.Link>
-            <Nav.Link><Link to={"/prices"}>Prices</Link></Nav.Link>
+            <Nav.Link><Link to={"/price"}>Price</Link></Nav.Link>
           </Nav>
           <Nav className="ml-auto mr-3">
             <Nav.Link><Link to={"/commercial"}>Commercial</Link></Nav.Link>
